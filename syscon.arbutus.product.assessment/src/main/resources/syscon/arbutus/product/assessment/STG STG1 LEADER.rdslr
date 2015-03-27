@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "STG STG1 LEADER"
+	dialect "mvel"
+	when
+		Assessment Type is STG1 and Assessment Score is greater than or equal to 500 and Assessment Score is less than or equal to 600
+	then
+		Assessment Result is LEADER
+end

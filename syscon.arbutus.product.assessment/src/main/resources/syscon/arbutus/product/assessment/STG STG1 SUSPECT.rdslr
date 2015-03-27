@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "STG STG1 SUSPECT"
+	dialect "mvel"
+	when
+		Assessment Type is STG1 and Assessment Score is greater than or equal to 5 and Assessment Score is less than or equal to 20
+	then
+		Assessment Result is SUSPECT
+end

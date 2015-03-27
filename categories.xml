@@ -1,0 +1,41 @@
+<org.guvnor.common.services.shared.metadata.model.Categories>
+  <children>
+    <org.guvnor.common.services.shared.metadata.model.CategoryItem>
+      <parent class="org.guvnor.common.services.shared.metadata.model.Categories" reference="../../.."/>
+      <children>
+        <org.guvnor.common.services.shared.metadata.model.CategoryItem>
+          <parent reference="../../.."/>
+          <children/>
+          <name>Eligibility rules</name>
+          <description></description>
+        </org.guvnor.common.services.shared.metadata.model.CategoryItem>
+        <org.guvnor.common.services.shared.metadata.model.CategoryItem>
+          <parent reference="../../.."/>
+          <children/>
+          <name>Pricing rules</name>
+          <description></description>
+        </org.guvnor.common.services.shared.metadata.model.CategoryItem>
+        <org.guvnor.common.services.shared.metadata.model.CategoryItem>
+          <parent reference="../../.."/>
+          <children/>
+          <name>Test scenarios</name>
+          <description></description>
+        </org.guvnor.common.services.shared.metadata.model.CategoryItem>
+        <org.guvnor.common.services.shared.metadata.model.CategoryItem>
+          <parent reference="../../.."/>
+          <children/>
+          <name>Technical</name>
+          <description></description>
+        </org.guvnor.common.services.shared.metadata.model.CategoryItem>
+      </children>
+      <name>Home Mortgage</name>
+      <description></description>
+    </org.guvnor.common.services.shared.metadata.model.CategoryItem>
+    <org.guvnor.common.services.shared.metadata.model.CategoryItem>
+      <parent class="org.guvnor.common.services.shared.metadata.model.Categories" reference="../../.."/>
+      <children/>
+      <name>Commercial Mortgage</name>
+      <description></description>
+    </org.guvnor.common.services.shared.metadata.model.CategoryItem>
+  </children>
+</org.guvnor.common.services.shared.metadata.model.Categories>

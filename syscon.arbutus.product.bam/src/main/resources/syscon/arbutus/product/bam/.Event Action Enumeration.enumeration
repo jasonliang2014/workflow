@@ -1,0 +1,28 @@
+<org.uberfire.java.nio.base.Properties serialization="custom">
+  <unserializable-parents/>
+  <map>
+    <default>
+      <loadFactor>0.75</loadFactor>
+      <threshold>12</threshold>
+    </default>
+    <int>16</int>
+    <int>4</int>
+    <string>dcore.relation[0]</string>
+    <string></string>
+    <string>dcore.subject[0]</string>
+    <string></string>
+    <string>dcore.description[0]</string>
+    <string>An enumeration is a mapping from fields to a list of values. This will mean the rule editor will show a drop down for fields, instead of a text box. The format of this is: &apos;FactType.fieldName&apos;: [&apos;Value1&apos;, &apos;Value2&apos;]
+You can add more mappings by adding in more lines. 
+For example:
+
+&apos;Person.sex&apos; : [&apos;M&apos;, &apos;F&apos;]
+&apos;Person.rating&apos; : [&apos;High&apos;, &apos;Low&apos;]
+
+You can also add display aliases (so the value used in the rule is separate to the one displayed:
+&apos;Person.sex&apos; : [&apos;M=Male&apos;, &apos;F=Female&apos;]
+in the above case, the &apos;M=Male&apos; means that &apos;Male&apos; will be displayed as an item in a drop down box, but the value &apos;M&apos; will be used in the rule.</string>
+    <string>dcore.source[0]</string>
+    <string></string>
+  </map>
+</org.uberfire.java.nio.base.Properties>

@@ -1,0 +1,19 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Supervision"
+	salience 100
+	dialect "mvel"
+	when
+		supervision : Supervision( )
+	then
+		for(Sentence sentence : supervision.getSentences()){
+		   insert(sentence);
+		}
+		for(KeyDate keyDate : supervision.getKeyDates()){
+		   insert(keyDate);
+		}
+		
+		System.out.println("Guvnor works" + supervision.getSupervisionId() + " VERSION: 3")
+end

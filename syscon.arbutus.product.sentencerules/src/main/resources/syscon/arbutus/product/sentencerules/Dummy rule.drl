@@ -1,0 +1,28 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.Supervision;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.Adjustment;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.SentenceTerm;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.Sentence;
+import syscon.arbutus.product.services.assessment.realization.persistence.ScoreRange;
+import syscon.arbutus.product.services.person.realization.persistence.StampEntity;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.Aggregate;
+import syscon.arbutus.product.services.movementactivity.contract.dto.TwoMovementsType;
+import syscon.arbutus.product.services.sentencecalculation.contract.util.DateUtil;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.KeyDate;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.SentenceCalculationHistoryType;
+import syscon.arbutus.product.services.bam.contract.dto.BAMGrievanceType;
+import syscon.arbutus.product.services.grievances.contract.dto.GrievancesType;
+import syscon.arbutus.product.services.core.contract.dto.StampType;
+import syscon.arbutus.product.services.sentencecalculation.contract.dto.SentenceCalculationType;
+
+rule "Dummy rule"
+
+	dialect 'mvel'
+	when
+ 		//conditions
+	then
+		//actions
+
+
+end

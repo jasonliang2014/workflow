@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "STG STG1 MEMBER"
+	dialect "mvel"
+	when
+		Assessment Type is STG1 and Assessment Score is greater than or equal to 55 and Assessment Score is less than or equal to 500
+	then
+		Assessment Result is MEMBER
+end

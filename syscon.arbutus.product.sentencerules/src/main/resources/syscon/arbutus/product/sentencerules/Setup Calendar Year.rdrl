@@ -1,0 +1,11 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Setup Calendar Year"
+	dialect "mvel"
+	when
+		$supervision : Supervision( )
+	then
+		$supervision.setCalendarYearDays( 360 );
+end

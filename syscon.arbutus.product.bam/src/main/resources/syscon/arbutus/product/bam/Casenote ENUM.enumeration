@@ -1,0 +1,1 @@
+'BAMCaseNoteType.noteType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("NOTETYPE","EN")

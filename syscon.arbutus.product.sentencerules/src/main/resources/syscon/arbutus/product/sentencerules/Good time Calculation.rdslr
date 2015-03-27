@@ -1,0 +1,11 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Good time Calculation"
+	dialect "mvel"
+	when
+		When the sentence start from 01-Dec-2012
+	then
+		Calculate good time
+end

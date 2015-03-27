@@ -1,0 +1,12 @@
+package syscon.arbutus.product.sentencerules;
+
+import java.util.Date; 
+import java.util.Calendar;
+
+function Date addDays(Date date, int days){
+	Calendar c = Calendar.getInstance();
+	c.setTime(date);
+	c.add(Calendar.DATE, days-1);
+	return c.getTime();
+}
+

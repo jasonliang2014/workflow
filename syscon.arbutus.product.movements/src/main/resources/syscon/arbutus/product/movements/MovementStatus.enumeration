@@ -1,0 +1,1 @@
+'TwoMovementsType.movementStatus': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("MOVEMENTSTATUS","EN")

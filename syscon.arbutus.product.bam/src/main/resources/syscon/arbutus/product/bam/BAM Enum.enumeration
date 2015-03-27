@@ -1,0 +1,4 @@
+'BAMGrievanceType.issueType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("GRIEVANCETYPE","EN")
+'BAMGrievanceType.eventAction': ['EMAIL=Email','TASK=Create a task', 'REPORT=Generate a report', 'SMS=SMS']
+'BAMGrievanceType.issueSubType[issueType=COMPLAINT]': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodeForLink("GRIEVANCETYPE","COMPLAINT","EN")
+'BAMGrievanceType.issueSubType[issueType=REQUEST]': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodeForLink("GRIEVANCETYPE","REQUEST","EN")

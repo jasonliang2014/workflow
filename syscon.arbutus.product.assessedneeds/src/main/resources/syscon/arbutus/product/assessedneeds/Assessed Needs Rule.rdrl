@@ -1,0 +1,12 @@
+package syscon.arbutus.product.assessedneeds;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Assessed Needs Rule"
+	dialect "mvel"
+	when
+		assessedNeeds : AssessedNeeds( assessmentType == "CLASS" && assessmentCategory == "SECURITY" && calculatedScore >= 0 && casePlanType == "CSPL" && $actDate : activationDate >= "01-Nov-2012" && $deactDate : deactivationDate <= "17-Apr-2016" && securityLevel != "BAD" )
+	then
+		assessedNeeds.setPopulateAssessmentNeeds( true );
+		assessedNeeds.setDefaultAssessmentNeeds( "MEDEDC" );
+end

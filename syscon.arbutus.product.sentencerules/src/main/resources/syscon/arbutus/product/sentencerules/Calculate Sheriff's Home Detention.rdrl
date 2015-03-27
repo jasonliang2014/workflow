@@ -1,0 +1,13 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Calculate Sheriff's Home Detention"
+	dialect "mvel"
+	when
+		$supervision : Supervision( $supervisionId : supervisionId, sentenceStartDate != null )
+		$keyDate : KeyDate( supervisionId == $supervisionId , keyDateType == "SHD" )
+	then
+		java.text.SimpleDateFormat sdf = new java.text.SimpleDateFormat("null");
+		$keyDate.setKeyDate( addDays($supervision.getSentenceStartDate(),5) );
+end

@@ -1,0 +1,25 @@
+package syscon.arbutus.product.housing;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Offender Mappings"
+	dialect "mvel"
+	when
+		Offender business rules mapping
+	then
+		When Caution Code is 70 then map Offender Category to SUIC
+		When Caution Code is 75 then map Offender Category to PRCUS
+		When Health Issue is HS then map Location Property to HSENS
+		When Health Issue is WC then map Location Property to WHEELCHAIR
+		When Health Issue is RS then map Location Property to SHOWER
+		When the Assessment Result is MAX then map Security Level to MAX
+		When the Assessment Result is MED then map Security Level to MED
+		When the Assessment Result is MIN then map Security Level to MIN
+		When the Assessment Result is UNCLASS then map Security Level to UNCLASS
+		When Case Sentence Status is SENTENCED then map Sentence Status to SENTENCED
+		When Case Sentence Status is UNSENTENCED then map Sentence Status to UNSENTENCED
+		When Sex is F then map Offender Gender to F
+		When Sex is M then map Offender Gender to M
+		When Sex is U then map Offender Gender to U
+		print Offender Mapping done! 0987654321
+end

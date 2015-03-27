@@ -1,0 +1,12 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "PED and PDD Calculation factors"
+	dialect "mvel"
+	when
+		For offender supervision
+	then
+		Probable Discharge Date factor is 3  F of sentence days from sentence end date
+		Parole Eligibility Date factor is 3  F of sentence days from sentence start date
+end

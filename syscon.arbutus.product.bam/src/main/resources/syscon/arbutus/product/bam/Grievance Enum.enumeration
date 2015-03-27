@@ -1,0 +1,2 @@
+'BAMGrievanceType.resolution': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("GRIEVANCERESOLUTION","EN")
+'BAMGrievanceType.status': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("GrievanceStatus","EN")

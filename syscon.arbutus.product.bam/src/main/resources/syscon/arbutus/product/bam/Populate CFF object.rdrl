@@ -1,0 +1,14 @@
+package syscon.arbutus.product.bam;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Populate CFF object"
+	salience 100
+	dialect "mvel"
+	when
+		$casenote : BAMCaseNoteType( )
+	then
+		for(BAMCCFType bamCCFType : $casenote.getBamCCFTypes()){
+		     insert(bamCCFType);
+		  }
+end

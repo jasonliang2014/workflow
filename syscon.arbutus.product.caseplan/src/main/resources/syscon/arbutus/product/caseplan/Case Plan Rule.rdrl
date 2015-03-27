@@ -1,0 +1,12 @@
+package syscon.arbutus.product.caseplan;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Case Plan Rule"
+	dialect "mvel"
+	when
+		scasePlanRule : CasePlanRuleType( casePlanType == "CSPL" , securityLevel == "UNCLASS" , assessmentType == "CLASS" , assessmentScore >= 0 )
+	then
+		scasePlanRule.setDayMonthYear( "DAY" );
+		scasePlanRule.setNumDayMonthYear( 10 );
+end

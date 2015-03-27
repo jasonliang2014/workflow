@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Proxy Assessment Unstable"
+	dialect "mvel"
+	when
+		Assessment Type is PROXY_ASSESSMENT and Assessment Score is greater than or equal to 5 and Assessment Score is less than or equal to 8
+	then
+		Assessment Result is NON_ADMINISTRATIVE
+end

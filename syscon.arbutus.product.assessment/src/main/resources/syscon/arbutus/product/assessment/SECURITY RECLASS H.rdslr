@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "SECURITY RECLASS H"
+	dialect "mvel"
+	when
+		Assessment Type is RECLASS and Assessment Score is greater than or equal to 467 and Assessment Score is less than or equal to 2000
+	then
+		Assessment Result is H
+end

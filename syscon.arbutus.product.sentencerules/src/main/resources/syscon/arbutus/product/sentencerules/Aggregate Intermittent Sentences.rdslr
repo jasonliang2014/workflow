@@ -1,0 +1,15 @@
+package syscon.arbutus.product.sentencerules;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Aggregate Intermittent Sentences"
+	dialect "mvel"
+	when
+		>sentence : Sentence( sentenceType == "INTER" )
+	then
+		Multiple intermittent sentences across case is to be Yes
+		sentence false good time credit of 30  F of sentence term
+		If the Day of Sentence is not the same as the 1st Report On day of the intermittent sentence, inmate receives2of day to his sentence term
+		When an offender serves L  4 hours in a day then it will satisfy 1 days else 1 days fulfilled in a sentence
+		When an offender consecutively stays to 3 days that will satisfy 5 days fulfilled in a sentence
+end

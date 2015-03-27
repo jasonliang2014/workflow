@@ -1,0 +1,12 @@
+package syscon.arbutus.product.movements;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Conflict check with inmate outside"
+	dialect "mvel"
+	when
+		The status of the movement to be scheduled is APPREQ or PENDING or COMPLETED
+		The inmate is already out of the facility for an external movement.
+	then
+		Notify the user of a conflict.
+end

@@ -1,0 +1,1 @@
+'BAMCCFType.columnName': (new syscon.arbutus.product.services.realization.util.ClientCustomFieldDataHelper()).getClientCustomFields("CASENOTE","EN")

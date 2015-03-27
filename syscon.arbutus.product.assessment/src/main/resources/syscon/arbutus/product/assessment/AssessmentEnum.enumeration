@@ -1,0 +1,2 @@
+'ScoreRange.assessmentType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("ASSESSMENTTYPE","EN")
+'ScoreRange.type': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("ASSESSMENTRESULT","EN")

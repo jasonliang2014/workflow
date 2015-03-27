@@ -1,0 +1,4 @@
+'CasePlanRuleType.casePlanType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("CASEPLANTYPE","EN")
+'CasePlanRuleType.securityLevel': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("ASSESSMENTRESULT","EN")
+'CasePlanRuleType.assessmentType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("ASSESSMENTTYPE","EN")
+'CasePlanRuleType.dayMonthYear': ['DAY','MONTH','YEAR']

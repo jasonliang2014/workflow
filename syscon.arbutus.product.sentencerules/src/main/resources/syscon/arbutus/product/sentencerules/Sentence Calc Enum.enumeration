@@ -1,0 +1,9 @@
+'Supervision.pddType': ['F=Fraction','P=Percent(%)']
+'Supervision.pedType': ['F=Fraction','P=Percent(%)']
+'Sentence.sentenceType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("SENTENCETYPE","EN")
+'KeyDate.keyDateType': (new syscon.arbutus.product.services.realization.util.ReferenceDataHelper()).getReferenceCodes("KEYDATES","EN")
+'Sentence.aggregatedOrNot': ['Yes=Aggregated','No=Not Aggregated']
+'Sentence.caseAcrossOrAlone': ['across','within','all']
+'Sentence.receiveGoodTime': ['true=receives','false=does not receive']
+'Sentence.goodTimeType': ['F=Fraction','P=Percent(%)']
+'Sentence.comparisionQuantifier': ['L=less than','G=greater than','E=equal to','EL=less than or equal to','EG=greater than or equal to']

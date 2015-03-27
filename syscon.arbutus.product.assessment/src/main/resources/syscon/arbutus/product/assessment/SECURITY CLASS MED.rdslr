@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "SECURITY CLASS MED"
+	dialect "mvel"
+	when
+		Assessment Type is CLASS and Assessment Score is greater than or equal to 11 and Assessment Score is less than or equal to 12
+	then
+		Assessment Result is MED
+end

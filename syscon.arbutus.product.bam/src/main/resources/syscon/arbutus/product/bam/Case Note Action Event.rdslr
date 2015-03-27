@@ -1,0 +1,12 @@
+package syscon.arbutus.product.bam;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Case Note Action Event"
+	dialect "mvel"
+	when
+		CaseNote is of type CAU
+		CaseNote Additional Field InfoSource with value for review
+	then
+		Change Action Event to TASK
+end

@@ -1,0 +1,22 @@
+package syscon.arbutus.product.housing;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Outcome Mappings"
+	dialect "mvel"
+	when
+		Outcome business rules mapping
+	then
+		Mismatch reaction: When housing attribute is LocationPropertyNotInList then outcome should be SUTBL
+		Mismatch reaction: When housing attribute is SecurityLevelNotInList then outcome should be WRNG
+		Mismatch reaction: When housing attribute is AgeNotInRange then outcome should be WRNG
+		Mismatch reaction: When housing attribute is OffenderCategoryNotInList then outcome should be SUTBL
+		Mismatch reaction: When housing attribute is GenderNotInList then outcome should be WRNG
+		Mismatch reaction: When housing attribute is SentenceStatusNotInList then outcome should be WRNG
+		Non-Association conflict reaction: When code is TOTAL then outcome should be WRNG
+		Non-Association conflict reaction: When code is CELL then outcome should be WRNG
+		Element mismatch reaction: When LocationProperty code is WHEELCHAIR then outcome should be APPR
+		Element mismatch reaction: When OffenderCategory code is PRCUS then outcome should be APPR
+		Element mismatch reaction: When SecurityLevel changed from MAX to MIN then outcome should be NOTPD
+		print Outcome mapping done!
+end

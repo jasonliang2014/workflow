@@ -1,0 +1,11 @@
+package syscon.arbutus.product.assessment;
+
+import syscon.arbutus.product.services.assessment.contract.dto.AssessedNeeds;
+
+rule "Medical Screening Stable"
+	dialect "mvel"
+	when
+		Assessment Type is MEDICAL_SCREENING and Assessment Score is greater than or equal to 0 and Assessment Score is less than or equal to 0
+	then
+		Assessment Result is STABLE
+end
